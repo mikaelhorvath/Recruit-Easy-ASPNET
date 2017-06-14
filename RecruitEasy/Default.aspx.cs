@@ -31,6 +31,8 @@ namespace RecruitEasy
             p.Town = DropDownList1.Text;
            
             DBController c = new DBController(p);
+            // Where the magic happens
+            c.InsertIntoDb();
         }
     }
 }
